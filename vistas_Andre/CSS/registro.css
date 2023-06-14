@@ -8,8 +8,10 @@ body {
     background-image: url("https://images.pexels.com/photos/1370296/pexels-photo-1370296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-size: cover;
     background-color: gray;
-
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     overflow: hidden;
     margin: 0;
@@ -21,17 +23,8 @@ body {
     padding: 20px 70px;
     border: 30px;
     width: 450px;
-    height: 500px;
+    height: 450px;
     color: black;
-}
-
-.padree{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
-
 }
 
 .form-control {
@@ -56,16 +49,9 @@ body {
     font-size: 16px;
     border: transparent;
     border-radius: 5px;
-    color: #fff;
 }
 
-.btn:focus {
-    outline: 0;
-}
 
-.btn:active {
-    transform: scale(0.98);
-}
 
 .text {
     margin-top: 30px;
@@ -85,6 +71,26 @@ body {
     width: 100%;
     padding: 10px;
     color: black;
+}
+
+.form-control input:focus .form-control input:valid {
+    outline: 0;
+    border-bottom-color: #1473E6;
+}
+
+.form-control label {
+
+    position: absolute;
+    pointer-events: none;
+
+}
+
+.form-control label span {
+
+    display: inline-block;
+    font-size: 20px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0265, 1.55);
 }
 
 a {
